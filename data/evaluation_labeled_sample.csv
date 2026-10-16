@@ -1,0 +1,24 @@
+# EVALUATION BENCHMARK DATASET: Expert-Labelled Satellite Fire Detections
+# NOTICE: Labelled synthetic dataset specifically designed for testing triage priority ranking alignment.
+# NOT a trained ML model dataset.
+record_id,latitude,longitude,acq_date,acq_time,satellite,instrument,confidence,frp,ground_truth_tier,ground_truth_binary,analyst_notes
+EVAL_001,39.7592,-121.6219,2026-10-16,1430,NOAA-20,VIIRS,h,145.8,Tier 1: Immediate Review,1,Severe active crown fire behavior with massive thermal output in critical zone
+EVAL_002,39.7615,-121.6184,2026-10-16,1432,NOAA-20,VIIRS,h,182.4,Tier 1: Immediate Review,1,Rapidly expanding head fire front with multiple corroborating detections
+EVAL_003,39.7680,-121.6110,2026-10-16,1435,NOAA-20,VIIRS,h,210.5,Tier 1: Immediate Review,1,Peak thermal intensity detection in active wildfire complex
+EVAL_004,44.2345,-121.8920,2026-10-16,1345,NOAA-21,VIIRS,h,165.2,Tier 1: Immediate Review,1,Major forest fire detection with high FRP and corroborating cluster
+EVAL_005,58.4520,-115.3410,2026-10-16,1200,NOAA-20,VIIRS,h,240.6,Tier 1: Immediate Review,1,Massive northern boreal burn with peak radiative energy
+EVAL_006,39.7540,-121.6290,2026-10-16,1430,NOAA-20,VIIRS,h,98.6,Tier 1: Immediate Review,1,Active fire perimeter flank with solid cluster support
+EVAL_007,39.7725,-121.6050,2026-10-16,1120,Suomi-NPP,VIIRS,nominal,84.2,Tier 2: Elevated Watch,1,High FRP but slightly older pass; maintains active flank watch
+EVAL_008,39.7490,-121.6350,2026-10-16,1122,Suomi-NPP,VIIRS,h,112.0,Tier 2: Elevated Watch,1,High FRP perimeter detection; intermediate recency
+EVAL_009,44.2380,-121.8870,2026-10-16,1345,NOAA-21,VIIRS,nominal,68.4,Tier 2: Elevated Watch,1,Active timber burn cluster with moderate FRP
+EVAL_010,44.2310,-121.8980,2026-10-16,0315,Aqua,MODIS,88,89.5,Tier 2: Elevated Watch,1,Nighttime MODIS thermal peak corroborating expanding fire
+EVAL_011,58.4480,-115.3490,2026-10-16,1202,NOAA-20,VIIRS,h,150.3,Tier 1: Immediate Review,1,High FRP cluster component in remote timber stand
+EVAL_012,38.1205,-96.4520,2026-10-16,1510,NOAA-20,VIIRS,nominal,22.4,Tier 3: Routine / Low Concern,0,Low FRP agricultural burn with minor cluster evidence
+EVAL_013,38.1250,-96.4480,2026-10-16,1510,NOAA-20,VIIRS,low,12.8,Tier 3: Routine / Low Concern,0,Weak agricultural field burn with low sensor confidence
+EVAL_014,38.1800,-96.3900,2026-10-16,0500,Terra,MODIS,45,18.5,Tier 3: Routine / Low Concern,0,Isolated low-confidence night MODIS reading
+EVAL_015,34.5210,-118.9400,2026-10-16,1400,NOAA-21,VIIRS,low,8.5,Tier 3: Routine / Low Concern,0,Isolated low confidence spot; probable industrial or solar artifact
+EVAL_016,47.1120,-114.2300,2026-10-16,0230,Terra,MODIS,35,11.2,Tier 3: Routine / Low Concern,0,Low confidence isolated anomaly with zero temporal repeats
+EVAL_017,32.8450,-105.4120,2026-10-15,1600,Suomi-NPP,VIIRS,nominal,19.0,Tier 3: Routine / Low Concern,0,Stale 24h+ single detection with low thermal output
+EVAL_018,39.7810,-121.5980,2026-10-15,2215,Terra,MODIS,78,64.2,Tier 2: Elevated Watch,1,Corroborating previous day MODIS perimeter observation
+EVAL_019,44.2250,-121.9050,2026-10-15,2140,Terra,MODIS,65,42.0,Tier 3: Routine / Low Concern,0,Older pass with moderate FRP; superseded by recent VIIRS
+EVAL_020,38.2500,-96.3100,2026-10-15,1900,Aqua,MODIS,52,24.0,Tier 3: Routine / Low Concern,0,Stale agricultural detection with zero ongoing cluster activity
